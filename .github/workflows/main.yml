@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@f1
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
           
