@@ -1,22 +1,8 @@
 {
-  "dependencies": {
-    "-": "0.0.1",
-    "D": "^1.0.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "config": "^3.3.6",
-    "express": "^4.17.1",
-    "mongoose": "^5.12.6",
-    "react": "^17.0.2",
-    "validation": "0.0.1"
-  },
   "name": "seeds",
-  "description": "",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
   "scripts": {
     "start": "node app.js",
     "app": "nodemon app.js",
@@ -31,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/MattHerbertZA/CISE_Team/issues"
   },
-  "homepage": "https://github.com/MattHerbertZA/CISE_Team#readme"
+  "homepage": "https://github.com/MattHerbertZA/CISE_Team#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.6",
+    "validation": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
