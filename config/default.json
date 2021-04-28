@@ -1,6 +1,5 @@
-
 {
     "mongoURI":
-    "mongodb+srv://matt:flickh@merndb.4olyw.mongodb.net/mernDB?retryWrites=true&w=majority"
-  }
+    "mongodb+srv://matt:flickh@seeds.4olyw.mongodb.net/seeds?retryWrites=true&w=majority "
+   }
   
