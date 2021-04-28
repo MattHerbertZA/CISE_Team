@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 // Load Article model
-const Book = require('../../models/Article');
+const Book = require('../../models/Articles');
 
 // @route GET api/article/test
 // @description tests alrticle route
