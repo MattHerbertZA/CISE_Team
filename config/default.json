@@ -1,4 +1,9 @@
 {
     "mongoURI":
-      "mongodb+srv://matt:flickh@seeds.4olyw.mongodb.net/seeds?retryWrites=true&w=majority"
+      "mongodb+srv://matt:flickh@seeds.4olyw.mongodb.net/seeds?retryWrites=true&w=majority",
+      
+      "NODE_ENV": 
+            "production"
   }
+
+
