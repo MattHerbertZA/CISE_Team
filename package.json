@@ -4,18 +4,22 @@
     "D": "^1.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "config": "^3.3.6",
     "express": "^4.17.1",
-    "mongoose": "^5.12.5",
-    "nodemon": "^2.0.7",
+    "mongoose": "^5.12.6",
     "react": "^17.0.2",
     "validation": "0.0.1"
   },
   "name": "seeds",
-  "description": "��#\u0000 \u0000C\u0000I\u0000S\u0000E\u0000_\u0000t\u0000e\u0000a\u0000m\u0000\r\u0000 \u0000",
+  "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
   "scripts": {
+    "start": "node app.js",
+    "app": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

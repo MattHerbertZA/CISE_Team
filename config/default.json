@@ -1,0 +1,6 @@
+
+{
+    "mongoURI":
+    "mongodb+srv://matt:flickh@merndb.4olyw.mongodb.net/mernDB?retryWrites=true&w=majority"
+  }
+  
