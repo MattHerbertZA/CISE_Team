@@ -48,6 +48,7 @@ class UpdateArticleInfo extends Component {
       isbn: this.state.isbn,
       author: this.state.author,
       description: this.state.description,
+      body: this.state.body,
       published_date: this.state.published_date,
       publisher: this.state.publisher
     };
@@ -132,6 +133,17 @@ class UpdateArticleInfo extends Component {
                 onChange={this.onChange}
               />
             </div>
+            
+            <div className='form-group-body'>
+                  <input
+                    type='text'
+                    placeholder='Article Body'
+                    name='body'
+                    className='form-control'
+                    value={this.state.body}
+                    onChange={this.onChange}
+                  />
+                </div>
 
             <div className='form-group'>
             <label htmlFor="published_date">Published Date</label>

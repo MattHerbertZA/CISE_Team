@@ -82,6 +82,11 @@ class showArticleDetails extends Component {
             <td>Description</td>
             <td>{ article.description }</td>
           </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Article Body</td>
+            <td>{article.body } </td>
+          </tr>
         </tbody>
       </table>
     </div>

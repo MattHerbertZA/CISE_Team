@@ -16,6 +16,7 @@ const ArticleCard = (props) => {
                 </h2>
                 <h3>{article.author}</h3>
                 <p>{article.description}</p>
+                <p>{article.body}</p>
             </div>
         </div>
     )
