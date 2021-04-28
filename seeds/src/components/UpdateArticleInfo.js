@@ -133,8 +133,8 @@ class UpdateArticleInfo extends Component {
                 onChange={this.onChange}
               />
             </div>
-            
-            <div className='form-group-body'>
+
+            <div className='form-group'>
                   <input
                     type='text'
                     placeholder='Article Body'
