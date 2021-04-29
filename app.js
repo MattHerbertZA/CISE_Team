@@ -10,7 +10,7 @@ const articles = require('./routes/api/articles');
 const path = require('path')
 const app = express();
 
-const PORT = process.end.PORT || 8082
+//const PORT = process.end.PORT || 8082
 
 // Connect Database
 connectDB();
@@ -26,16 +26,16 @@ app.get('/', (req, res) => res.send('Hello world!'));
 // use Routes
 app.use('/api/articles', articles);
 
-if(process.env.NODE_ENV == "production") {
+//if(process.env.NODE_ENV == "production") {
     app.use(express.static('seeds/build'))
     const path = require('path')
     app.get('*', (req,res)=>{
         res.sendFile(path.resolve(__dirname, 'seeds', 'build', 'index.html'))
     })
-} else{
- app.get('/',(req, res) =>{
-     res.send("Api running");
- });   
-}
+//} else{
+// app.get('/',(req, res) =>{
+//     res.send("Api running");
+// });   
+//}
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
