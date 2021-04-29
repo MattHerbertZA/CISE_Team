@@ -59,6 +59,10 @@
   color: white;
 }
 
+textarea {
+  resize: none;
+}
+
 
 /* ArticleList Styles */
 .list {
