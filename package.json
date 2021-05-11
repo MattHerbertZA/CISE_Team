@@ -2,11 +2,13 @@
   "name": "seeds",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix seeds && npm run build --prefix seeds",
+    "lint" : "eslint"
   },
   "repository": {
     "type": "git",
