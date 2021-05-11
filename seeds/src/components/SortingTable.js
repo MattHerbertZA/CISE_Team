@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { ColumnFilter } from "./ColumnFilter";
 import { GlobalFilter } from "./GlobalFilter";
 
-export const FilteringTable = () => {
+export const SortingTable = () => {
   //added props here
 
   const columns = useMemo(() => COLUMNS, []);
