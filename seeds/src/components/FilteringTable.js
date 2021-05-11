@@ -39,7 +39,7 @@ export const FilteringTable = () => {
   return (
     <>
       <div className="Table">
-        <div className="container">
+          <h2 className ="display-4 text-center"> SEEDs</h2>
           <div className="dropDown">
             <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
           </div>
@@ -48,11 +48,17 @@ export const FilteringTable = () => {
               {headerGroups.map((headerGroup) => (
                 <tr {...headerGroup.getHeaderGroupProps()}>
                   {headerGroup.headers.map((column) => (
-                    <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                    <th
+                      {...column.getHeaderProps(column.getSortByToggleProps())}
+                    >
                       {" "}
                       {column.render("Header")}
                       <span>
-                          {column.isSorted ? (column.isSortedDesc ? ' ˅' : ' ˄') : ' '}
+                        {column.isSorted
+                          ? column.isSortedDesc
+                            ? " ˅"
+                            : " ˄"
+                          : " "}
                       </span>
                     </th>
                   ))}
@@ -74,7 +80,6 @@ export const FilteringTable = () => {
               })}
             </tbody>
           </table>
-        </div>
       </div>
     </>
   );

@@ -62,7 +62,7 @@ class ShowArticleList extends Component {
 
             <div className="col-md-13">
               <Link to="/FilteringTable" className="btn btn-outline-warning float-right">
-                + S.E.E.Ds
+               S.E.E.Ds
               </Link>
               <br />
               <br />
