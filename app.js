@@ -4,6 +4,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 var cors = require('cors');
 const {MONGOURI} = require('./config/keys');
+const port = 8082;
 
 // routes
 const articles = require('./routes/api/articles');
@@ -28,7 +29,6 @@ app.use('/api/articles', articles);
 
 //if(process.env.NODE_ENV == "production") {
     app.use(express.static('seeds/build'))
-    const path = require('path')
     app.get('*', (req,res)=>{
         res.sendFile(path.resolve(__dirname, 'seeds', 'build', 'index.html'))
     })
