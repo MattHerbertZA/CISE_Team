@@ -12,6 +12,7 @@ class ShowArticleList extends Component {
     };
   }
 
+
   componentDidMount() {
     axios
       .get('http://localhost:8082/api/articles')
@@ -27,16 +28,6 @@ class ShowArticleList extends Component {
 
 
   render() {
-
-    let rows = [];
-    for(var i = 0; i <this.state.size; i++){
-      let rowID = 'row${i}'
-      
-    }
-
-
-
-
 
 
     const articles = this.state.articles;
@@ -63,6 +54,15 @@ class ShowArticleList extends Component {
             <div className="col-md-11">
               <Link to="/create-article" className="btn btn-outline-warning float-right">
                 + Add New Article
+              </Link>
+              <br />
+              <br />
+              <hr />
+            </div>
+
+            <div className="col-md-13">
+              <Link to="/FilteringTable" className="btn btn-outline-warning float-right">
+               S.E.E.Ds
               </Link>
               <br />
               <br />
