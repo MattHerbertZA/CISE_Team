@@ -1,0 +1,4 @@
+[
+    {"title": "TestTitle", "author":"Author", "date": "12/12/12", "se_practice":"TDD", "claim":"Claim", "level_of_evidence":"High"},
+    {"title": "Title: Blah Blah Blah", "author":"Author LongName", "date": "02/10/2010", "se_practice":"TDD", "claim":"Claim: This is a very long claim to test the size of the box thing", "level_of_evidence":"High"}
+]

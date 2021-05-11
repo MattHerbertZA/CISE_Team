@@ -12,6 +12,7 @@ class ShowArticleList extends Component {
     };
   }
 
+
   componentDidMount() {
     axios
       .get('http://localhost:8082/api/articles')
@@ -27,16 +28,6 @@ class ShowArticleList extends Component {
 
 
   render() {
-
-    let rows = [];
-    for(var i = 0; i <this.state.size; i++){
-      let rowID = 'row${i}'
-      
-    }
-
-
-
-
 
 
     const articles = this.state.articles;
