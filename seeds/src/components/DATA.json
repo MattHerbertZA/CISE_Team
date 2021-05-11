@@ -1,4 +1,37 @@
 [
     {"title": "TestTitle", "author":"Author", "date": "12/12/12", "se_practice":"TDD", "claim":"Claim", "level_of_evidence":"High"},
-    {"title": "Title: Blah Blah Blah", "author":"Author LongName", "date": "02/10/2010", "se_practice":"TDD", "claim":"Claim: This is a very long claim to test the size of the box thing", "level_of_evidence":"High"}
+    {"title": "Title: Blah Blah Blah", "author":"Author LongName", "date": "02/10/2010", "se_practice":"TDD", "claim":"Claim: This is a very long claim to test the size of the box thing", "level_of_evidence":"High"},
+    
+    {"title": "{Most common mistakes in test-driven development practice: Results from an online survey with developers", 
+        "author":"Aniche, M F and Testing, MA Gerosa Software", 
+        "date": "{2010}", 
+        "se_practice":"TDD", 
+        "claim":"null", 
+        "level_of_evidence":"High"
+    },
+
+    {"title": "Does Test-Driven Development Really Improve Software Design Quality?", 
+        "author":"{Janzen, D S} and {Saiedian, H}", 
+        "date": "2008", 
+        "se_practice":"TDD", 
+        "claim":"null", 
+        "level_of_evidence":"Low"
+    },
+
+    {"title": "A prototype empirical evaluation of test driven development - Software Metrics, Proceedings. 10th International Symposium on", 
+        "author":"Anonymous:O7UPDeq-", 
+        "date": "2004", 
+        "se_practice":"TDD", 
+        "claim":"null", 
+        "level_of_evidence":"Medium"
+    },
+
+    {"title": "An Empirical Assessment on Affective Reactions of Novice Developers when Applying Test-Driven Development", 
+        "author":"Romano, Simone and Fucci, Davide and Baldassarre, Maria Teresa and Caivano, Danilo and Scanniello, Giuseppe", 
+        "date": "2019", 
+        "se_practice":"TDD", 
+        "claim":"null", 
+        "level_of_evidence":"High"
+    },
+    
 ]
