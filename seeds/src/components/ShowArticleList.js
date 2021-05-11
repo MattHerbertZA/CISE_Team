@@ -27,6 +27,18 @@ class ShowArticleList extends Component {
 
 
   render() {
+
+    let rows = [];
+    for(var i = 0; i <this.state.size; i++){
+      let rowID = 'row${i}'
+      
+    }
+
+
+
+
+
+
     const articles = this.state.articles;
     console.log("PrintArticle: " + articles);
     let articleList;
@@ -45,7 +57,7 @@ class ShowArticleList extends Component {
           <div className="row">
             <div className="col-md-12">
               <br />
-              <h2 className="display-4 text-center">Articles List</h2>
+              <h2 className="display-4 text-center">S.E.E.Ds</h2>
             </div>
 
             <div className="col-md-11">
