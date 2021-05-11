@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useMemo, useState, useEffect } from 'react';
 import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,7 @@ class ShowArticleList extends Component {
       articles: []
     };
   }
+
 
   componentDidMount() {
     axios
@@ -27,16 +28,6 @@ class ShowArticleList extends Component {
 
 
   render() {
-
-    let rows = [];
-    for(var i = 0; i <this.state.size; i++){
-      let rowID = 'row${i}'
-      
-    }
-
-
-
-
 
 
     const articles = this.state.articles;
