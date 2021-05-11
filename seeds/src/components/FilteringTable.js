@@ -1,12 +1,14 @@
 import React, { useMemo } from "react";
-import { useTable } from "react-table";
+import { useTable, useGlobalFilter, useColumnFilter } from "react-table";
 import DATA from "./DATA.json"; //how to get from db????
 import { COLUMNS } from "./columns";
 import "./table.css";
 import "../App.css";
 import { Link } from "react-router-dom";
+import { ColumnFilter } from "./ColumnFilter";
+import { GlobalFilter } from "./GlobalFilter";
 
-export const Table = () => {
+export const FilteringTable = () => {
   //added props here
 
   const columns = useMemo(() => COLUMNS, []);
@@ -16,24 +18,21 @@ export const Table = () => {
   const tableInstance = useTable({
     columns,
     data,
-  });
+  }, useGlobalFilter)
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow, state, setGlobalFilter } =
     tableInstance;
 
+    const { globalFilter } = state
+    
   return (
+      <>
     <div className="Table">
       <div className="container">
         <div className="dropDown">
-          <div className="sePractice">
-            SE Practice <br></br>
-            <select name="dropDownSE" id="dropDown">
-                <option value="TDD">TDD</option> {" "}
-              <option value="For Testing">Testing</option> 
-              <option value="all">All</option>
-            </select>
+      <GlobalFilter filter ={globalFilter} setFilter={setGlobalFilter} />
+          
           </div>
-        </div>
         <table className="table table-hover table-dark" {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup) => (
@@ -64,5 +63,6 @@ export const Table = () => {
         </table>
       </div>
     </div>
-  );
+    </>
+  )
 };

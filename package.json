@@ -8,7 +8,7 @@
     "app": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix seeds && npm run build --prefix seeds",
-    "lint" : "eslint"
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.12.6",
+    "react-dropdown": "^1.9.2",
+    "react-dropdown-now": "^5.0.0",
     "react-router-dom": "^5.2.0",
     "validation": "0.0.1"
   },
