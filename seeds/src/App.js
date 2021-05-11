@@ -6,12 +6,16 @@ import CreateArticle from './components/CreateArticle';
 import ShowArticleList from './components/ShowArticleList';
 import ShowArticleDetails from './components/ShowArticleDetails';
 import UpdateArticleInfo from './components/UpdateArticleInfo';
+import { Table } from './components/Table';
+import { FilteringTable } from './components/FilteringTable';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
+          <Route path = '/Table' component={Table} />
+          <Route path = '/FilteringTable' component={FilteringTable} />
           <Route exact path='/' component={ShowArticleList} />
           <Route path='/create-article' component={CreateArticle} />
           <Route path='/edit-article/:id' component={UpdateArticleInfo} />
