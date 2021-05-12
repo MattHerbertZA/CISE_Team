@@ -8,14 +8,16 @@ import ShowArticleDetails from './components/ShowArticleDetails';
 import UpdateArticleInfo from './components/UpdateArticleInfo';
 import { Table } from './components/Table';
 import { FilteringTable } from './components/FilteringTable';
+import { SortingTable } from './components/SortingTable';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route path = '/Table' component={Table} />
+        <Route path = '/SortingTable' component={SortingTable} />
           <Route path = '/FilteringTable' component={FilteringTable} />
+          <Route path = '/Table' component={Table} />
           <Route exact path='/' component={ShowArticleList} />
           <Route path='/create-article' component={CreateArticle} />
           <Route path='/edit-article/:id' component={UpdateArticleInfo} />

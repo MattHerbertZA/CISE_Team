@@ -60,6 +60,15 @@ class ShowArticleList extends Component {
               <hr />
             </div>
 
+            <div className="col-md-13">
+              <Link to="/FilteringTable" className="btn btn-outline-warning float-right">
+               S.E.E.Ds
+              </Link>
+              <br />
+              <br />
+              <hr />
+            </div>
+
           </div>
 
           <div className="list">
