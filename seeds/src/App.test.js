@@ -13,3 +13,8 @@ it('renders without fatal error', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
 });
+
+it('renders without fatal error', () => {
+  const div = document.createElement('Table');
+  ReactDOM.render(<App />, div);
+});
