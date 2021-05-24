@@ -14,7 +14,7 @@ it('renders without fatal error', () => {
   ReactDOM.render(<App />, div);
 });
 
-it('renders without fatal error', () => {
+it('table renders without fatal error', () => {
   const div = document.createElement('Table');
   ReactDOM.render(<App />, div);
 });
