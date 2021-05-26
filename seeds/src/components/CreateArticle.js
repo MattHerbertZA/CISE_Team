@@ -10,10 +10,10 @@ class CreateArticle extends Component {
       title: "",
       isbn: "",
       author: "",
-      description: "",
-      body: "",
+      se_practice: "",
+      claim: "",
+      evidence_level: "",
       published_date: "",
-      publisher: "",
     };
   }
 
@@ -28,10 +28,10 @@ class CreateArticle extends Component {
       title: this.state.title,
       isbn: this.state.isbn,
       author: this.state.author,
-      description: this.state.description,
-      body: this.state.body,
+      se_practice: this.state.se_practice,
+      claim: this.state.claim,
+      evidence_level: this.evidence_level,
       published_date: this.state.published_date,
-      publisher: this.state.publisher,
     };
 
     axios
@@ -41,16 +41,17 @@ class CreateArticle extends Component {
           title: "",
           isbn: "",
           author: "",
-          description: "",
-          body: "",
+          se_practice: "",
+          claim: "",
+          evidence_level: "",
           published_date: "",
-          publisher: "",
         });
         this.props.history.push("/");
       })
       .catch((err) => {
         console.log("Error in CreateArticle!");
       });
+      alert("Article Submitted! Thank you for your help in growing SEEDs!");
   };
 
   render() {
@@ -65,8 +66,8 @@ class CreateArticle extends Component {
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Add Article</h1>
-              <p className="lead text-center">Create new article</p>
+              <h1 className="display-4 text-center">Request Article</h1>
+              <p className="lead text-center">Request new article</p>
 
               <form noValidate onSubmit={this.onSubmit}>
                 <div className="form-group">
@@ -105,50 +106,38 @@ class CreateArticle extends Component {
 
                 <div className="form-group">
                   <input
-                    type="text"
-                    placeholder="Describe this article"
-                    name="description"
-                    className="form-control"
-                    value={this.state.description}
-                    onChange={this.onChange}
-                  />
-                </div>
-
-                <div className="form-group">
-                  <input
-                    type="date"
-                    placeholder="published_date"
+                    type="month"
                     name="published_date"
                     className="form-control"
                     value={this.state.published_date}
                     onChange={this.onChange}
                   />
                 </div>
+
                 <div className="form-group">
                   <input
                     type="text"
-                    placeholder="Publisher of this Article"
-                    name="publisher"
+                    placeholder="SE Practice"
+                    name="se_practice"
                     className="form-control"
-                    value={this.state.publisher}
+                    value={this.state.se_practice}
                     onChange={this.onChange}
                   />
                 </div>
 
-                <div className="form-group-body">
-                  <textarea
-                    name="body"
-                    rows="10"
-                    cols="25"
-                    placeholder="Article Body"
+                <div className="form-group">
+                  <input
+                    type="text"
+                    placeholder="Claim of this Article"
+                    name="claim"
                     className="form-control"
-                    value={this.state.body}
+                    value={this.state.claim}
                     onChange={this.onChange}
-                  ></textarea>
+                  />
                 </div>
 
                 <input
-                  onSubmit={this.onSubmit}
+                  onSubmit={this.onSubmit} 
                   type="submit"
                   className="btn btn-outline-warning btn-block mt-4"
                 />

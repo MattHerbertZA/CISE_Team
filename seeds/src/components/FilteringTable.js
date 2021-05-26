@@ -6,7 +6,7 @@ import "./table.css";
 import "../App.css";
 import { ColumnFilter } from "./ColumnFilter";
 import { GlobalFilter } from "./GlobalFilter";
-
+import { Link } from "react-router-dom";
 
 export const FilteringTable = () => {
   //added props here
@@ -17,8 +17,8 @@ export const FilteringTable = () => {
 
   const defaultColumn = useMemo(() => {
     return {
-      Filter: ColumnFilter
-    }
+      Filter: ColumnFilter,
+    };
   }, []);
 
   const tableInstance = useTable(
@@ -28,11 +28,10 @@ export const FilteringTable = () => {
       defaultColumn,
       initialState: {
         // eslint-disable-next-line array-callback-return
-        hiddenColumns: columns.map(column => {
-          if(column.show === false) return column.accessor;
+        hiddenColumns: columns.map((column) => {
+          if (column.show === false) return column.accessor;
         }),
       },
-
     },
     useFilters,
     useGlobalFilter,
@@ -54,24 +53,24 @@ export const FilteringTable = () => {
   return (
     <>
       <div className="Table">
-          <h2 className ="display-4 text-center"> SEEDs</h2>
-          <div className="dropDown">
-            <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
-          </div>
-          <table className="table table-hover table-dark" {...getTableProps()}>
-            <thead>
-              {headerGroups.map((headerGroup) => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                  {headerGroup.headers.map((column) =>  {
-                    return column.hideHeader === true ? null : (
+        <h2 className="display-4 text-center"> SEEDs</h2>
+        <div className="dropDown">
+          <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
+        </div>
+        <table className="table table-hover table-dark" {...getTableProps()}>
+          <thead>
+            {headerGroups.map((headerGroup) => (
+              <tr {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map((column) => {
+                  return column.hideHeader === true ? null : (
                     <th
                       {...column.getHeaderProps(column.getSortByToggleProps())}
                     >
                       {" "}
                       {column.render("Header")}
-
-                      <div className = "dateFilter">{column.canFilter ? column.render('Filter') : null} </div>
-
+                      <div className="dateFilter">
+                        {column.canFilter ? column.render("Filter") : null}{" "}
+                      </div>
                       <span>
                         {column.isSorted
                           ? column.isSortedDesc
@@ -80,26 +79,37 @@ export const FilteringTable = () => {
                           : "Sort"}
                       </span>
                     </th>
-              )})}
+                  );
+                })}
+              </tr>
+            ))}
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {rows.map((row) => {
+              prepareRow(row);
+              return (
+                <tr {...row.getRowProps()}>
+                  {row.cells.map((cell) => {
+                    return (
+                      <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                    );
+                  })}
                 </tr>
-              ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-              {rows.map((row) => {
-                prepareRow(row);
-                return (
-                  <tr {...row.getRowProps()}>
-                    {row.cells.map((cell) => {
-                      return ( 
-                        
-                        <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+              );
+            })}
+          </tbody>
+        </table>
+        <div className="col-md-11">
+        <Link
+          to="/create-article"
+          className="btn btn-outline-warning"
+        >
+          + Request New Article
+        </Link>
+        <br />
+        <br />
+        <hr />
+      </div>
       </div>
     </>
   );
