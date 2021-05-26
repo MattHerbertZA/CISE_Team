@@ -4,7 +4,6 @@ import DATA from "./DATA.json"; //how to get from db????
 import { COLUMNS } from "./columns";
 import "./table.css";
 import "../App.css";
-import { Link } from "react-router-dom";
 import { ColumnFilter } from "./ColumnFilter";
 import { GlobalFilter } from "./GlobalFilter";
 
@@ -28,6 +27,7 @@ export const FilteringTable = () => {
       data,
       defaultColumn,
       initialState: {
+        // eslint-disable-next-line array-callback-return
         hiddenColumns: columns.map(column => {
           if(column.show === false) return column.accessor;
         }),
