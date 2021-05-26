@@ -31,9 +31,7 @@ export const FilteringTable = () => {
         hiddenColumns: columns.map(column => {
           if(column.show === false) return column.accessor;
         }),
-
       },
-
 
     },
     useFilters,
