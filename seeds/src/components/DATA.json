@@ -28,10 +28,12 @@
         "date": "2019", 
         "se_practice":"TDD", 
         "claim":"TDD improves code quality", 
-        "level_of_evidence":"Medium"
+        "level_of_evidence":"Medium",
+        "ten":"ten",
+        "five":"five"
     },
     
-    {"title": "Evaluating Test-Driven Development in an Industry-Sponsored Capstone Project", 
+    {"title": "Evaluating Test-Driven Development in an Industry-Sponsored Project", 
         "author":"Vu", 
         "date": "2009", 
         "se_practice":"TDD", 
@@ -44,15 +46,20 @@
         "date": "2017", 
         "se_practice":"TDD", 
         "claim":"TDD improves code quality", 
-        "level_of_evidence":"Medium"
+        "level_of_evidence":"Medium",
+        "ten":"ten",
+        "five":"five"
     },
 
     {"title": "Results from a replicated experiment on the affective reactions of novice developers when applying test-driven development", 
-        "author":"Romano, Simone and Scanniello, Giuseppe and Baldassarre, Maria Teresa and Fucci, Davide and Caivano, Danilo", 
+        "author":"Romano, Scanniello, Giuseppe and Baldassarre, Maria Teresa and Fucci, Davide and Caivano, Danilo", 
         "date": "2020", 
         "se_practice":"TDD", 
         "claim":"TDD improves team confidence and satisfaction", 
-        "level_of_evidence":"Medium"
+        "level_of_evidence":"Medium",
+        "ten":"ten",
+        "five":"five",
+        "one":"one"
     },
 
     {"title": "On the Influence of Test-Driven Development on Software Design", 
@@ -60,7 +67,10 @@
         "date": "2020", 
         "se_practice":"TDD", 
         "claim":"TDD improves product quality", 
-        "level_of_evidence":"High"
+        "level_of_evidence":"High",
+        "ten":"ten",
+        "five":"five",
+        "one":"one"
     },
 
     {"title": "A Leveled Examination of Test-Driven Development Acceptance", 
@@ -76,8 +86,7 @@
         "date": "2006", 
         "se_practice":"TDD", 
         "claim":"TDD improves product quality", 
-        "level_of_evidence":"High",
-        "test":"ten"
+        "level_of_evidence":"High"
     },
 
     {"title": "Productivity of Test Driven Development: A Controlled Experiment with Professionals", 
@@ -85,8 +94,7 @@
         "date": "2006", 
         "se_practice":"TDD", 
         "claim":"TDD improves code quality", 
-        "level_of_evidence":"Medium",
-        "test":"ten"
+        "level_of_evidence":"Medium"
     }
 ]
 

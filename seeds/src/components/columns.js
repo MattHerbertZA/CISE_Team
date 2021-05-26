@@ -9,36 +9,59 @@ export const COLUMNS = [
     {
         Header: 'Title',
         accessor: 'title',
-        disableFilters: true
+        disableFilters: true,
+        show: true
+
     },
     {
         Header: 'Author',
         accessor: 'author',
-        disableFilters: true
+        disableFilters: true,
+        show: true
+
     },
     {
         Header: 'Date',
         accessor: 'date',
         disableFilters: true,
+        show: true
 
     },
     {
         Header: 'SE Practice',
         accessor: 'se_practice',
+        show: true
     },
     {
         Header: 'Claim',
         accessor: 'claim',
+        show: true
     },
     {
         Header: 'Level of Evidence',
         accessor: 'level_of_evidence',
-        disableFilters: true
-    }
-    ,{
-        Header: 'Test',
-        accessor: 'test',
         disableFilters: true,
-        hideHeader: true
+        show: true
+    },
+    {
+        Header: 'Ten',
+        accessor: 'ten',
+        disableFilters: true,
+        hideHeader: true,
+        show: false
+    },
+    {
+        Header: 'Five',
+        accessor: 'five',
+        disableFilters: true,
+        hideHeader: true,
+        show: false
+    },
+    {
+        Header: 'One',
+        accessor: 'one',
+        disableFilters: true,
+        hideHeader: true,
+        show: false
     }
 ]

@@ -26,7 +26,15 @@ export const FilteringTable = () => {
     {
       columns,
       data,
-      defaultColumn
+      defaultColumn,
+      initialState: {
+        hiddenColumns: columns.map(column => {
+          if(column.show === false) return column.accessor;
+        }),
+
+      },
+
+
     },
     useFilters,
     useGlobalFilter,
