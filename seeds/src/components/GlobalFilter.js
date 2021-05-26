@@ -6,7 +6,8 @@ import React from "react";
 export const GlobalFilter = ({ filter, setFilter }) => {
   
   //I am honestly so sorry how I have implemented this, I know this is disgusting
-    
+  
+  
   return (
     <span>
       Search by date:

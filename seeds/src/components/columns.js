@@ -1,31 +1,25 @@
-import { ColumnFilter } from "./ColumnFilter"
-import React from "react";
-import { text } from "body-parser";
-
-
-
 
 export const COLUMNS = [
     {
         Header: 'Title',
         accessor: 'title',
-        disableFilters: true,
-        show: true
-
-    },
+        //disableFilters: true,
+        show: true,
+        width: "100px",
+        sortable: false,
+        filterable: false
+        },
     {
         Header: 'Author',
         accessor: 'author',
-        disableFilters: true,
+        //disableFilters: true,
         show: true
-
     },
     {
         Header: 'Date',
         accessor: 'date',
-        disableFilters: true,
-        show: true
-
+        //disableFilters: true,
+        show: true,
     },
     {
         Header: 'SE Practice',

@@ -55,10 +55,6 @@ export const FilteringTable = () => {
 
   return (
     <>
-    <div>
-        
-    </div>
-
       <div className="Table">
           <h2 className ="display-4 text-center"> SEEDs</h2>
           <div className="dropDown">
@@ -68,7 +64,7 @@ export const FilteringTable = () => {
             <thead>
               {headerGroups.map((headerGroup) => (
                 <tr {...headerGroup.getHeaderGroupProps()}>
-                  {headerGroup.headers.map((column) => {
+                  {headerGroup.headers.map((column) =>  {
                     return column.hideHeader === true ? null : (
                     <th
                       {...column.getHeaderProps(column.getSortByToggleProps())}
@@ -81,9 +77,9 @@ export const FilteringTable = () => {
                       <span>
                         {column.isSorted
                           ? column.isSortedDesc
-                            ? " ˅"
-                            : " ˄"
-                          : " "}
+                            ? "Descending"
+                            : "Ascending"
+                          : "Sort"}
                       </span>
                     </th>
               )})}
