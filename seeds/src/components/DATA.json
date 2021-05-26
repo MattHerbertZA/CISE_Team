@@ -3,7 +3,7 @@
         "author":"Aniche, M F and Testing, MA Gerosa Software", 
         "date": "2010", 
         "se_practice":"TDD", 
-        "claim":"TDD Causes mistakes", 
+        "claim":"TDD improves team confidence and satisfaction", 
         "level_of_evidence":"Low"
     },
 
@@ -11,7 +11,7 @@
         "author":"Janzen, D S and Saiedian, H", 
         "date": "2008", 
         "se_practice":"TDD", 
-        "claim":"TDD Results in more highly tested smaller code", 
+        "claim":"TDD improves code quality", 
         "level_of_evidence":"Low"
     },
 
@@ -19,7 +19,7 @@
         "author":"Anonymous", 
         "date": "2004", 
         "se_practice":"TDD", 
-        "claim":"TDD Results in fewer unplanned test failures and less debugging", 
+        "claim":"TDD improves product quality", 
         "level_of_evidence":"Medium"
     },
 
@@ -27,15 +27,17 @@
         "author":"Romano, Simone and Fucci, Davide and Baldassarre, Maria Teresa and Caivano, Danilo and Scanniello, Giuseppe", 
         "date": "2019", 
         "se_practice":"TDD", 
-        "claim":"TDD helps team morale", 
-        "level_of_evidence":"Medium"
+        "claim":"TDD improves code quality", 
+        "level_of_evidence":"Medium",
+        "ten":"ten",
+        "five":"five"
     },
     
-    {"title": "Evaluating Test-Driven Development in an Industry-Sponsored Capstone Project", 
+    {"title": "Evaluating Test-Driven Development in an Industry-Sponsored Project", 
         "author":"Vu", 
         "date": "2009", 
         "se_practice":"TDD", 
-        "claim":"TDD Lowers Productivity", 
+        "claim":"TDD improves team confidence and satisfaction", 
         "level_of_evidence":"Medium"
     },
 
@@ -43,31 +45,39 @@
         "author":"Siniaalto, Maria and Abrahamsson, Pekka", 
         "date": "2017", 
         "se_practice":"TDD", 
-        "claim":"TDD Leads to improved software design", 
-        "level_of_evidence":"Medium"
+        "claim":"TDD improves code quality", 
+        "level_of_evidence":"Medium",
+        "ten":"ten",
+        "five":"five"
     },
 
     {"title": "Results from a replicated experiment on the affective reactions of novice developers when applying test-driven development", 
-        "author":"Romano, Simone and Scanniello, Giuseppe and Baldassarre, Maria Teresa and Fucci, Davide and Caivano, Danilo", 
+        "author":"Romano, Scanniello, Giuseppe and Baldassarre, Maria Teresa and Fucci, Davide and Caivano, Danilo", 
         "date": "2020", 
         "se_practice":"TDD", 
-        "claim":"TDD reduces team happiness", 
-        "level_of_evidence":"Medium"
+        "claim":"TDD improves team confidence and satisfaction", 
+        "level_of_evidence":"Medium",
+        "ten":"ten",
+        "five":"five",
+        "one":"one"
     },
 
     {"title": "On the Influence of Test-Driven Development on Software Design", 
         "author":"Anonymous", 
         "date": "2020", 
         "se_practice":"TDD", 
-        "claim":"TDD Improves code quality as well as productivity", 
-        "level_of_evidence":"High"
+        "claim":"TDD improves product quality", 
+        "level_of_evidence":"High",
+        "ten":"ten",
+        "five":"five",
+        "one":"one"
     },
 
     {"title": "A Leveled Examination of Test-Driven Development Acceptance", 
         "author":"Anonymous", 
         "date": "2007", 
         "se_practice":"TDD", 
-        "claim":"TDD is more accepted by mature programmers", 
+        "claim":"TDD improves team confidence and satisfaction", 
         "level_of_evidence":"Low"
     },
 
@@ -75,7 +85,7 @@
         "author":"Anonymous", 
         "date": "2006", 
         "se_practice":"TDD", 
-        "claim":"Increases quality of code", 
+        "claim":"TDD improves product quality", 
         "level_of_evidence":"High"
     },
 
@@ -83,7 +93,7 @@
         "author":"Canfora, Gerardo and Cimitile, Aniello and Garcia, Felix and Piattini, Mario and Visaggio, and Corrado Aaron", 
         "date": "2006", 
         "se_practice":"TDD", 
-        "claim":"TDD Increases productivity", 
+        "claim":"TDD improves code quality", 
         "level_of_evidence":"Medium"
     }
 ]
